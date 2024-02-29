@@ -1,0 +1,33 @@
+@import '../styles/variables';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: $bg;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin: 10px;
+  }
+  &__btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #018aff;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #0177ff;
+    }
+  }
+}

@@ -2,6 +2,7 @@
 
 #root {
   height: 100vh;
+  margin: 0 auto;
 }
 
 * {
@@ -15,14 +16,32 @@ body {
   font-family: var(Poppins);
   color: var(dark);
   overflow-x: hidden;
-  background-color: $white;
+  background-color: $bg;
   scroll-behavior: smooth;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: $gray;
+a {
+  text-decoration: none;
+  color: var(dark);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: $light;
 }
 
 ::-webkit-scrollbar {
